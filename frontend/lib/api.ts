@@ -1,4 +1,6 @@
-const DEFAULT_BASE_URL = "http://localhost:8080/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const normalizedApiUrl = (API_URL ?? "http://localhost:8080").replace(/\/+$/, "");
+const DEFAULT_BASE_URL = `${normalizedApiUrl}/api`;
 
 function buildUrl(path: string, baseUrl: string): string {
   if (path.startsWith("http://") || path.startsWith("https://")) {
