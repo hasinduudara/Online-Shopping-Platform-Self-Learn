@@ -29,7 +29,7 @@ public class CorsConfig {
 				"X-Requested-With"));
 
 		// If you use cookies / credentials, set this to true (and also set fetch/axios credentials accordingly).
-		configuration.setAllowCredentials(false);
+		configuration.setAllowCredentials(true);
 		configuration.setMaxAge(3600L);
 
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
