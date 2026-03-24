@@ -1,5 +1,5 @@
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
-const normalizedApiUrl = (API_URL ?? "http://localhost:8080").replace(/\/+$/, "");
+const normalizedApiUrl = (API_URL ?? "http://20.197.18.48:8080").replace(/\/+$/, "");
 const DEFAULT_BASE_URL = `${normalizedApiUrl}/api`;
 
 function buildUrl(path: string, baseUrl: string): string {
